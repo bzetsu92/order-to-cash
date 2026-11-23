@@ -1,0 +1,45 @@
+node_modules/
+.pnpm-store/
+.next/
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# env
+.env
+.dev.env
+.env.local
+.env.*.local
+
+# drizzle
+packages/db/drizzle/meta/_journal.json.bak
+
+# misc
+.DS_Store
+*.log
+logs/
+.data/
+coverage/
+.turbo/
+
+apps/web/public/pdfjs/
+
+apps/_work
+p.github/
+ui.shadcn.example/
+
+# terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+!*.tfvars.example
+infra/aws/backend.tf
+/example
+packages/db/src/_seed/docs/jgt
+# LAN deploy: local secrets, backups and the exported Caddy root CA
+infra/lan/backups
+infra/lan/*.crt
+infra/onprem/backups
